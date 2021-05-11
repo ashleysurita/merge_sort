@@ -29,11 +29,8 @@ function merge(arr1 = [], arr2 = []){
             res.push(arr2[a2])
             a2++
         }
-    }
-    // console.log(res, a1, a2)
-    
-    res = [...res, ...arr1.slice(a1), ...arr2.slice(a2)]
-    
+    }    
+    res = [...res, ...arr1.slice(a1), ...arr2.slice(a2)]    
     return res.flat()
 }
 
